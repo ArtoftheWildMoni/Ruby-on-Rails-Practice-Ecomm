@@ -26,10 +26,10 @@
             <tbody>
               <% @admin_categories.each do |c|%>
                 <tr class="bg-gray-50 border-b">
-                  <td class="px-6 py-4 whitespace-nowrap tex-sm font-medium text-gray-800 underline">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 underline">
                     link_to c.name, edit_admin_category_path(c)
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap tex-sm font-medium text-gray-800 underline">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 underline">
                     <%= c.description %>
                   </td>                  
                 </tr>
