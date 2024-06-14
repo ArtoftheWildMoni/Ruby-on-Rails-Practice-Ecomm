@@ -25,6 +25,7 @@ class Admin::CategoriesController < AdminController
 
     respond_to do |format|
       if @admin_category.save
+        Rails.logger.info("Image attached: #{@admin_category.image.attached?}") # Debug statement
         format.html { redirect_to admin_category_url(@admin_category), notice: "Category was successfully created." }
         format.json { render :show, status: :created, location: @admin_category }
       else
